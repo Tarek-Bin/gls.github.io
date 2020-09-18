@@ -1,0 +1,51 @@
+.item img{
+    width:100%;
+}
+
+.item{
+    width:95%;
+    margin: auto;
+}
+
+.ami-gedu{
+    position: relative;
+}
+
+.prev {
+	padding: 15px;
+	font-size: 25px;
+	color: rgba(255,255,255,0.6);
+	display: inline-block;
+	text-align: center;
+	background-color: rgba(0,0,0,.6);
+	position: absolute;
+	top: 22%;
+	left: 16px;
+	z-index: 5;
+	border-radius: 15px 5px 5px 15px;
+}
+
+.next {
+	
+    padding: 15px;
+    font-size: 25px;
+    color: rgba(255,255,255,0.6);
+    display: inline-block;
+    text-align: center;
+    background-color: rgba(0,0,0,.6);
+    position: absolute;
+    top: 22%;
+    right: 16px;
+    z-index: 5;
+    border-radius: 5px 15px 15px 5px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+	width: 15px;
+	height: 10px;
+	margin: 5px 7px;
+	background: maroon;
+	display: block;
+    transition: opacity .2s ease;
+    border-radius: 0;
+}

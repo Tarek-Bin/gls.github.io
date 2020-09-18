@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owl Carousel</title>
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gedu">
+    <div class="owl-carousel owl-theme">
+        <div class="item"><img src="images/owl1.jpg" alt=""></div>
+        <div class="item"><img src="images/owl2.jpg" alt=""></div>
+        <div class="item"><img src="images/owl3.jpg" alt=""></div>
+        <div class="item"><img src="images/owl4.jpg" alt=""></div>
+        <div class="item"><img src="images/owl5.jpg" alt=""></div>
+        <div class="item"><img src="images/owl6.jpg" alt=""></div>
+        <div class="item"><img src="images/owl7.jpg" alt=""></div>
+        <div class="item"><img src="images/owl8.jpg" alt=""></div>
+       
+    </div>
+    <a class="prev" href="#"><i class="fas fa-arrow-left"></i></a>
+    <a class="next" href="#"><i class="fas fa-arrow-right"></i></a>
+</div>
+
+
+
+
+
+
+
+ <script src="js/jquery-3.5.1.min.js"></script>
+ <script src="js/owl.carousel.min.js"></script>
+ <script>
+     (function ($){
+         $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                'items':4,
+                'nav':true,
+                'autoplay':true,
+                'autoplayTimeout':2000,
+				'loop':true,
+                'autoplaySpeed':300,
+                'autoplayHoverPause':true,
+                'navText':['আগে','পরে'],
+                responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:4
+        }
+    }
+            });
+
+
+var owl = $('.owl-carousel');
+owl.owlCarousel();
+// Go to the next item
+$('.next').click(function() {
+    owl.trigger('next.owl.carousel');
+})
+// Go to the previous item
+$('.prev').click(function() {
+    // With optional speed parameter
+    // Parameters has to be in square bracket '[]'
+    owl.trigger('prev.owl.carousel', [300]);
+});
+
+
+
+})
+     })(jQuery)
+ </script>
+</body>
+</html>
